@@ -22,11 +22,11 @@ export default class Logo extends Component<{}> {
 
             <View style={styles.container}>
 
-                <Image style={{ width: 40, height: 70 }}
+                <Image style={{ width: 300, height: 100 }}
 
                     source={require('../assets/logo.png')} />
 
-                <Text style={styles.logoText}>Welcome to My app.</Text>
+                <Text style={styles.logoText}>Welcome to My app</Text>
 
             </View>
 
