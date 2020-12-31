@@ -80,13 +80,13 @@ export default class HomeScreen extends React.Component {
         // Lanjutkan di bawah ini!
         */}
         {/* clue dapat dilihat di https://snack.expo.io/@kameyin/two-column-flatlist-(method-1) */}
-        <Text>{data.produk[0].nama}</Text>
 
         <FlatList
           data={data.produk}
           renderItem={({ item }) => (
             <ListItem data={item} />
           )}
+          numColumns={2}
         />
 
       </View>
@@ -153,7 +153,8 @@ const styles = StyleSheet.create({
     padding: 5,
   },
   itemImage: {
-
+    width: 100,
+    height: 100
   },
   itemName: {
 
